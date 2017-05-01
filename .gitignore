@@ -47,6 +47,7 @@ Temporary Items
 .apdisk
 
 #custom
+npm-debug.txt
 config/
 node_modules/
 bower_components/
@@ -60,3 +61,4 @@ routes/.event.js.swo
 *.jks
 *.keystore
 *.apk
+*.tar.bz2

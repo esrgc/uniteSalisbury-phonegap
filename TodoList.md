@@ -1,34 +1,58 @@
 #Todo List
 ---
 
+for transmission back and forth to mac
+```
+tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2 .
+```
+
 ## todo's for Apple deployment
 
 [Apple deployment checklist `human-readable`](https://code.tutsplus.com/tutorials/how-to-submit-an-ios-app-to-the-app-store--mobile-16812)
 
+[Apple App Store Review Guidelines `are you ready?`](https://developer.apple.com/app-store/review/guidelines/)
+
 #### on the Mac
 - [x] Install Xcode if not already     xcode-select --install
+
 - [x] Deployment Tools                 npm i -g ios-deploy
 
 #### Prerequisites
 - [x] AppID
-- [x] Distribution Certificate
+
+- [ ] Distribution Certificate
+
+    - [x] Development Certificate
+
+    - [ ] Production Certificate
+
 - [x] Provisioning Profile for development
+
 - [ ] Test devices
 
-        Need to connect to the Mac via USB 
+        Need to connect to the Mac via USB
         and allow those devices to be added to the development
         Provisioning Profile for production
 
-- [ ] Provisioning Profile for production/distribution
-- [ ] Build Settings
+        Demo account info for Apple review testers
+        UserName: xxxxxx
+        password: xxxxxx
 
-        Need to update URL from whatsup to uniteSalisbury
+- [ ] Provisioning Profile for production/distribution
+
+- [x] Build Settings
+
+    - [x] Need to update URL from whatsup to uniteSalisbury
+
+    - [x] [Need to properly define ATS exceptions for mapbox ](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW33)
 
 - [x] Deployment Target
 
 
 #### Assets
-- [ ] Icons
+- [x] Icons
+
+    `Note: may include alpha channel should not have transparent portion`
 
         Required
 
@@ -59,6 +83,13 @@
 
 #### Submission
 - [ ] Basic Info
+  - [x] Explain ATS exceptions
+
+        The servers that were given exceptions are not directly managed by the development
+        team.  The production server apps.esrgc.org is managed by Salisbury Universities
+        IT staff.  The mapbox tiles server is a third party server that we have no control over.
+        Hopefully the https requests modification works...!!!
+
 - [ ] Price & Availability
 - [ ] Metadata
 - [ ] Ready to Upload Binary
@@ -75,18 +106,19 @@
 [Android deployment checklist](https://developer.android.com/distribute/best-practices/launch/launch-checklist.html)
 
 #### Prerequisites
-- [ ] Build a release-ready APK
+- [x] Build a release-ready APK
 
-        Need to update target URL from whatsup to uniteSalisbury
+  - [x] Need to update target URL from whatsup to uniteSalisbury
+  - [x] Test on bluestacks emulator
+  - [x] Test on live device
 
 #### Assets
 - [ ] Plan for app's Play store listing (Metadata)
-    
-        Icon
-        Feature image
-        Screenshots
-        Description
-        Keywords
+  - [x] Icon
+  - [ ] Feature image
+  - [ ] Screenshots
+  - [ ] Description
+  - [ ] Keywords
 
 #### Submission
 - [ ] Upload APK to the alpha or beta channel
@@ -100,4 +132,3 @@
 #### Production
 - [ ] Determine app's content rating
 - [ ] Final checks and publishing
-

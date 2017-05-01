@@ -18,7 +18,7 @@
  */
 // ---------------------------------------------------------
 // set target for phonegap app
-var site = 'http://apps.esrgc.org/whatsup';
+var site = 'http://apps.esrgc.org/uniteSalisbury';
 // ---------------------------------------------------------
 
 
@@ -33,7 +33,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        // window.open = cordova.InAppBrowser.open;
+        window.open = cordova.InAppBrowser.open;
         this.receivedEvent('deviceready');
         var ref = window.open(site, '_self', 'location=no');
         ref.addEventListener('loadstart', function() { console.log('start: ' + event.url); });
