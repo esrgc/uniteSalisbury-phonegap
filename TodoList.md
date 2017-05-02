@@ -1,10 +1,10 @@
 #Todo List
 ---
 
-for transmission back and forth to mac
-```
+<!-- for transmission back and forth to mac
+
 tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2 .
-```
+ -->
 
 ## todo's for Apple deployment
 
@@ -34,11 +34,7 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
         and allow those devices to be added to the development
         Provisioning Profile for production
 
-        Demo account info for Apple review testers
-        UserName: xxxxxx
-        password: xxxxxx
-
-- [ ] Provisioning Profile for production/distribution
+- [x] Provisioning Profile for production/distribution
 
 - [x] Build Settings
 
@@ -71,27 +67,47 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
         Separate screenshots for iPhone/iPod Touch & iPad/iPad mini
         These screenshots will be used in the app store
 
-- [ ] Metadata
+        should consider adding temporary events/data to map for screenshots
+
+- [ ] Metadata [apple's guide to metadata](https://developer.apple.com/app-store/product-page/)
+  , [category outline](https://developer.apple.com/app-store/categories)
 
         1. Applications name
+              UniteSalisbury
+
         2. Version number
-        3. Primary (and an optional secondary) category
+              v1.1.9
+
+        3. Primary (and an optional secondary) Category
+              Primary Category: Social Networking
+              Secondary Category: ??????
+
         4. Concise description
-        5. Keywords for search in app store
-        6. Support URL
+              ???????
+
+        5. Keywords for search in app store (max 100 characters comma separated spaces count...)
+              ex. (words,like,ones,that,searches,will,direct,to,Unite,Salisbury)
+
+        6. Support URL (so people that need help with application can contact us...)
+              ESRGC.org or github repo ?
+
         7. Since there is a login function we need to provide Apple with a test/demo account for review process (so they dont have to create an accout for the app... they are lazy)
+              UserName: xxxxxx
+              password: xxxxxx
 
-#### Submission
+#### Submission [submit app to app review](https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/SubmittingTheApp.html)
 - [ ] Basic Info
-  - [x] Explain ATS exceptions
 
-        The servers that were given exceptions are not directly managed by the development
-        team.  The production server apps.esrgc.org is managed by Salisbury Universities
-        IT staff.  The mapbox tiles server is a third party server that we have no control over.
-        Hopefully the https requests modification works...!!!
+  - [ ] Explain ATS exceptions
+
+        If asked why the oxford server is not setup for https when apple is reviewing application will need to explain.
 
 - [ ] Price & Availability
+
+        $?
+
 - [ ] Metadata
+
 - [ ] Ready to Upload Binary
 
 #### Upload to the Store
@@ -106,29 +122,45 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 [Android deployment checklist](https://developer.android.com/distribute/best-practices/launch/launch-checklist.html)
 
 #### Prerequisites
+- [ ] Valid Google Play Store developer account
+
 - [x] Build a release-ready APK
 
   - [x] Need to update target URL from whatsup to uniteSalisbury
+
   - [x] Test on bluestacks emulator
+
   - [x] Test on live device
 
 #### Assets
 - [ ] Plan for app's Play store listing (Metadata)
+
   - [x] Icon
+
   - [ ] Feature image
+
   - [ ] Screenshots
+
+          should consider adding temporary events/data to map for screenshots
+
   - [ ] Description
+
   - [ ] Keywords
 
 #### Submission
 - [ ] Upload APK to the alpha or beta channel
+
 - [ ] Define app's compatibility
+
 - [ ] Check pre-launch reports
+
 - [ ] Setup app's price and countries of distribution
+
 - [ ] Opt-in to the right distribution options
 
         ie Android Wear and TV
 
 #### Production
 - [ ] Determine app's content rating
+
 - [ ] Final checks and publishing
