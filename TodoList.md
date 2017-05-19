@@ -89,10 +89,10 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
               ???????
 
         5. Keywords for search in app store (max 100 characters comma separated spaces count...)
-              ex. (words,like,ones,that,searches,will,direct,to,Unite,Salisbury)
+              Salisbury,event,event hosting,Salisbury MD,whatsup,unitesalisbury,unite salisbury
 
         6. Support URL (so people that need help with application can contact us...)
-              ESRGC.org or github repo ?
+              ESRGC.org
 
         7. Since there is a login function we need to provide Apple with a test/demo account for review process (so they dont have to create an account for the app... they are lazy)
               UserName: xxxxxx
@@ -115,24 +115,24 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 
       `validate the following properties that will cause app rejection if iTunes Connect information doesn't match`
 
-      - [ ] Bundle ID
+      - [x] Bundle ID
 
-      - [ ] Version Number (the app store version number)
+      - [x] Version Number (the app store version number)
 
       - [ ] App Sandbox information
 
 
   - [ ] Final questions pre-submit
 
-      - [ ] Minimum OS Version supported
+      - [x] Minimum OS Version supported
 
       iOS 8
 
-      - [ ] Export Compliance
+      - [x] Export Compliance `contains no encryption regulated by the U.S. BIS`
 
       - [ ] Content Rights
 
-      - [ ] Advertising Identifier (IDFA)
+      - [x] Advertising Identifier (IDFA) `no ADs`
 
   - [ ] Explain ATS exceptions
 
@@ -144,7 +144,7 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 
 - [ ] Metadata
 
-- [ ] Ready to Upload Binary
+- [x] Ready to Upload Binary
 
 #### Upload to the Store
 - [x] must use an apple device to create the archive for upload
@@ -158,7 +158,7 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 [Android deployment checklist](https://developer.android.com/distribute/best-practices/launch/launch-checklist.html)
 
 #### Prerequisites
-- [ ] Valid Google Play Store developer account [android developer](https://play.google.com/apps/publish/signup/)
+- [x] Valid Google Play Store developer account [android developer](https://play.google.com/apps/publish/signup/)
 
 - [x] Build a release-ready APK
 
@@ -173,30 +173,34 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 
   - [x] Icon
 
-  - [ ] Feature image
+  - [x] Feature image
 
   - [ ] Screenshots
 
           should consider adding temporary events/data to map for screenshots
+
+          screenshots for tablet
+            7-inch
+            10-inch
 
   - [ ] Description
 
   - [ ] Keywords
 
 #### Submission
-- [ ] Upload APK to the alpha or beta channel
+- [x] Upload APK to the alpha or beta channel
 
-- [ ] Define app's compatibility
+- [x] Define app's compatibility
 
 - [ ] Check pre-launch reports
 
-- [ ] Setup app's price and countries of distribution
+- [x] Setup app's price and countries of distribution
 
 - [ ] Opt-in to the right distribution options
 
         ie Android Wear and TV
 
 #### Production
-- [ ] Determine app's content rating
+- [x] Determine app's content rating
 
 - [ ] Final checks and publishing
