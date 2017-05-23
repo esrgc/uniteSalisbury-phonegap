@@ -81,7 +81,7 @@ for plaforms iOS and Android set target="_blank"
 
 will allow access to /uniteSalisbury*
 and mapbox tiles for mapbox
-
+<!--
 
 ### Apple iOS App Transport Security (ATS) solution
 ###### update mapbox to https and no special ATS exceptions needed
@@ -92,3 +92,4 @@ and mapbox tiles for mapbox
         <key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
         <true/>
         ```
+-->
