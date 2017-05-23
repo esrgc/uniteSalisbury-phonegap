@@ -28,11 +28,13 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 
 - [x] Provisioning Profile for development
 
-- [ ] Test devices
+- [x] Test devices
 
         Need to connect to the Mac via USB
         and allow those devices to be added to the development
         Provisioning Profile for production
+
+        Beta testing in Test flight
 
 - [x] Provisioning Profile for production/distribution
 
@@ -64,8 +66,12 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 
 - [ ] Screenshots
 
-        Minimum 1 Max 5
-        Separate screenshots for iPhone/iPod Touch & iPad/iPad mini
+    Minimum 1 Max 5
+    Separate screenshots for
+
+    - [ ] iPhone/iPod Touch
+    - [x] iPad/iPad mini
+
         These screenshots will be used in the app store
 
         should consider adding temporary events/data to map for screenshots
@@ -79,26 +85,32 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
               UniteSalisbury
 
         2. Version/(build) number
-              v1.1 (9)
+              v1.1 (12)
 
         3. Primary (and an optional secondary) Category
               Primary Category: Social Networking
               Secondary Category: ??????
 
         4. Concise description
-              ???????
+              Unite Salisbury is a simple way to find and manage events in the Salisbury Maryland
+              area.  The application features a map view and calendar view, allowing users
+              multiple ways to find events happening near them and on specific days and times.  
+              Event hosts can easily create, edit, and manage events.
 
         5. Keywords for search in app store (max 100 characters comma separated spaces count...)
               Salisbury,event,event hosting,Salisbury MD,whatsup,unitesalisbury,unite salisbury
 
         6. Support URL (so people that need help with application can contact us...)
-              ESRGC.org
+              www.ESRGC.org
 
         7. Since there is a login function we need to provide Apple with a test/demo account for review process (so they dont have to create an account for the app... they are lazy)
               UserName: xxxxxx
               password: xxxxxx
 
-#### Submission [submit app to app review](https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/SubmittingTheApp.html)
+#### Submission [submit app to app review](https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/SubmittingTheApp.html) [iTunes Connect](https://itunesconnect.apple.com)
+
+Double check info prior to app Submission
+
 - [ ] Basic Info
 
   - [ ] Verify App properties prior to submitting for review
@@ -130,7 +142,7 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 
       - [x] Export Compliance `contains no encryption regulated by the U.S. BIS`
 
-      - [ ] Content Rights
+      - [x] Content Rights
 
       - [x] Advertising Identifier (IDFA) `no ADs`
 
@@ -185,9 +197,11 @@ tar --exclude='node_modules/*' --exclude='*.tar.bz2' -cvjf backup-vX.X.X.tar.bz2
 
   - [ ] Description
 
+          See iPhone - Description
+
   - [ ] Keywords
 
-#### Submission
+#### Submission [Google Play Console](https://play.google.com/apps/publish)
 - [x] Upload APK to the alpha or beta channel
 
 - [x] Define app's compatibility
